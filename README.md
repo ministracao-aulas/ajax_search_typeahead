@@ -3,6 +3,51 @@
 - [Tutorial: Laravel 7/6 Typeahead Search | Laravel Autocomplete Search Example](https://www.nicesnippets.com/blog/laravel-6-typeahead-search-laravel-autocomplete-search-example)
 - [Select2.org](https://select2.org/) | [Ajax (remote data)](https://select2.org/data-sources/ajax/)
 
+---
+
+#### After clone
+
+```sh
+## Copy '.env.example' to '.env'
+cp .env.example .env
+
+## Install dependences
+composer install
+
+## Gen key
+php artisan key:generate
+
+## Set database on .env
+## Create sqlite database (Optional)
+touch database/database.sqlite
+
+## Run migrations
+php artisan migrate
+
+## Run seeders
+php artisan db:seed
+
+## Serve
+php artisan serve
+
+```
+
+#### Option one line
+
+```sh
+## One line
+cp .env.example .env && \
+composer install && \
+php artisan key:generate && \
+rm database/database.sqlite && \
+touch database/database.sqlite && \
+php artisan migrate && \
+php artisan db:seed && \
+php artisan serve
+
+```
+
+---
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
